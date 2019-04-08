@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Module: src/api/v1</title>
+    <title>JSDoc: Global</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Module: src/api/v1</h1>
+    <h1 class="page-title">Global</h1>
 
     
 
@@ -28,8 +28,7 @@
 
 <header>
     
-        
-            
+        <h2></h2>
         
     
 </header>
@@ -38,25 +37,8 @@
     <div class="container-overview">
     
         
-            <div class="description">API Router Module (V1)
-Integrates with various models through a common Interface (.get(), .post(), .put(), .delete())</div>
-        
 
         
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <dl class="details">
@@ -86,11 +68,6 @@ Integrates with various models through a common Interface (.get(), .post(), .put
     
 
     
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api_v1.js.html">api/v1.js</a>, <a href="api_v1.js.html#line3">line 3</a>
-    </li></ul></dd>
-    
 
     
 
@@ -98,22 +75,6 @@ Integrates with various models through a common Interface (.get(), .post(), .put
 
     
 </dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
         
@@ -137,13 +98,13 @@ Integrates with various models through a common Interface (.get(), .post(), .put
 
         
             
-<h4 class="name" id="~router"><span class="type-signature">(inner, constant) </span>router<span class="type-signature"></span></h4>
+<h4 class="name" id="rolesSchema"><span class="type-signature">(constant) </span>rolesSchema<span class="type-signature"></span></h4>
 
 
 
 
 <div class="description">
-    Router for REST routes
+    Mongodb schema
 </div>
 
 
@@ -181,7 +142,69 @@ Integrates with various models through a common Interface (.get(), .post(), .put
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api_v1.js.html">api/v1.js</a>, <a href="api_v1.js.html#line21">line 21</a>
+        <a href="auth_roles-model.js.html">auth/roles-model.js</a>, <a href="auth_roles-model.js.html#line9">line 9</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="users"><span class="type-signature">(constant) </span>users<span class="type-signature"></span></h4>
+
+
+
+
+<div class="description">
+    User schema
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="auth_users-model.js.html">auth/users-model.js</a>, <a href="auth_users-model.js.html#line18">line 18</a>
     </li></ul></dd>
     
 
@@ -209,7 +232,7 @@ Integrates with various models through a common Interface (.get(), .post(), .put
     
 
     
-    <h4 class="name" id="~handleDelete"><span class="type-signature">(inner) </span>handleDelete<span class="signature">(req, res, next)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="module:middleware/404"><span class="type-signature"></span>module:middleware/404<span class="signature">(req, res, next)</span><span class="type-signature"></span></h4>
     
 
     
@@ -217,7 +240,7 @@ Integrates with various models through a common Interface (.get(), .post(), .put
 
 
 <div class="description">
-    Deletes a single record from a given model.
+    Sends a JSON Formatted 404 Response
 </div>
 
 
@@ -269,7 +292,7 @@ Integrates with various models through a common Interface (.get(), .post(), .put
 
             
 
-            <td class="description last">Express Request Object (required params: model, id)</td>
+            <td class="description last">Express Request Object</td>
         </tr>
 
     
@@ -356,7 +379,7 @@ Integrates with various models through a common Interface (.get(), .post(), .put
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api_v1.js.html">api/v1.js</a>, <a href="api_v1.js.html#line104">line 104</a>
+        <a href="middleware_404.js.html">middleware/404.js</a>, <a href="middleware_404.js.html#line13">line 13</a>
     </li></ul></dd>
     
 
@@ -383,11 +406,6 @@ Integrates with various models through a common Interface (.get(), .post(), .put
 
 
 
-    <h5>Example</h5>
-    
-    <pre class="prettyprint"><code>router.delete('/api/v1/:model/:id', handleDelete);</code></pre>
-
-
 
         
             
@@ -395,7 +413,7 @@ Integrates with various models through a common Interface (.get(), .post(), .put
     
 
     
-    <h4 class="name" id="~handleGetAll"><span class="type-signature">(inner) </span>handleGetAll<span class="signature">(req, res, next)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="module:middleware/500"><span class="type-signature"></span>module:middleware/500<span class="signature">(err, req, res, next)</span><span class="type-signature"></span></h4>
     
 
     
@@ -403,7 +421,7 @@ Integrates with various models through a common Interface (.get(), .post(), .put
 
 
 <div class="description">
-    Fetches all records from a given model.
+    Sends a JSON Formatted 404 Response
 </div>
 
 
@@ -439,6 +457,29 @@ Integrates with various models through a common Interface (.get(), .post(), .put
 
         <tr>
             
+                <td class="name"><code>err</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Error Text</td>
+        </tr>
+
+    
+
+        <tr>
+            
                 <td class="name"><code>req</code></td>
             
 
@@ -455,7 +496,7 @@ Integrates with various models through a common Interface (.get(), .post(), .put
 
             
 
-            <td class="description last">Express Request Object (required params: model)</td>
+            <td class="description last">Express Request Object</td>
         </tr>
 
     
@@ -542,7 +583,7 @@ Integrates with various models through a common Interface (.get(), .post(), .put
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api_v1.js.html">api/v1.js</a>, <a href="api_v1.js.html#line46">line 46</a>
+        <a href="middleware_500.js.html">middleware/500.js</a>, <a href="middleware_500.js.html#line15">line 15</a>
     </li></ul></dd>
     
 
@@ -569,11 +610,6 @@ Integrates with various models through a common Interface (.get(), .post(), .put
 
 
 
-    <h5>Example</h5>
-    
-    <pre class="prettyprint"><code>router.get('/api/v1/:model', handleGetAll);</code></pre>
-
-
 
         
             
@@ -581,7 +617,7 @@ Integrates with various models through a common Interface (.get(), .post(), .put
     
 
     
-    <h4 class="name" id="~handleGetOne"><span class="type-signature">(inner) </span>handleGetOne<span class="signature">(req, res, next)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="module:middleware/model-finder"><span class="type-signature"></span>module:middleware/model-finder<span class="signature">(req, res, next)</span><span class="type-signature"></span></h4>
     
 
     
@@ -589,7 +625,10 @@ Integrates with various models through a common Interface (.get(), .post(), .put
 
 
 <div class="description">
-    Fetches a single record from a given model.
+    Model Finder Middleware
+Evaluates req.params.model (i.e. /api/v1/:model/) and returns an instance of the specified model.
+Because node require is cached, the instance will only be created once, no matter how many times a model is called for.
+In the event the model is not found, node will throw a "MODULE_NOT_FOUND" error which the error middleware in the server will pick up.
 </div>
 
 
@@ -641,7 +680,7 @@ Integrates with various models through a common Interface (.get(), .post(), .put
 
             
 
-            <td class="description last">Express Request Object (required params: model, id)</td>
+            <td class="description last">Express Request Object</td>
         </tr>
 
     
@@ -728,7 +767,7 @@ Integrates with various models through a common Interface (.get(), .post(), .put
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api_v1.js.html">api/v1.js</a>, <a href="api_v1.js.html#line65">line 65</a>
+        <a href="middleware_model-finder.js.html">middleware/model-finder.js</a>, <a href="middleware_model-finder.js.html#line16">line 16</a>
     </li></ul></dd>
     
 
@@ -753,383 +792,6 @@ Integrates with various models through a common Interface (.get(), .post(), .put
 
 
 
-
-
-    <h5>Example</h5>
-    
-    <pre class="prettyprint"><code>router.get('/api/v1/:model/:id', handleGetOne);</code></pre>
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="~handlePost"><span class="type-signature">(inner) </span>handlePost<span class="signature">(req, res, next)</span><span class="type-signature"></span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    Creates a single record in a given model.
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>req</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">object</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">Express Request Object (required params: req.model)</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>res</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">object</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">Express Response Object</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>next</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">function</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">Express middleware next()</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api_v1.js.html">api/v1.js</a>, <a href="api_v1.js.html#line78">line 78</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <h5>Example</h5>
-    
-    <pre class="prettyprint"><code>router.post('/api/v1/:model', handlePost);</code></pre>
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="~handlePut"><span class="type-signature">(inner) </span>handlePut<span class="signature">(req, res, next)</span><span class="type-signature"></span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    Updates a single record in a given model.
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>req</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">object</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">Express Request Object (required params: model, id)</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>res</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">object</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">Express Response Object</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>next</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">function</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">Express middleware next()</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api_v1.js.html">api/v1.js</a>, <a href="api_v1.js.html#line91">line 91</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <h5>Example</h5>
-    
-    <pre class="prettyprint"><code>router.put('/api/v1/:model/:id', handlePut);</code></pre>
 
 
 
