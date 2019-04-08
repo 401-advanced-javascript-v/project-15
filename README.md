@@ -8,7 +8,7 @@
 ### Links and Resources
 * [repo]()
 * [travis]()
-* [back-end]()
+* [heroku](https://git.heroku.com/intense-savannah-96971.git)
 
 #### Documentation
 * [jsdoc]()
@@ -57,4 +57,4 @@
   * The additional tests requested in the lab docs
 
 #### UML
-![](./lab_14_acl.jpg)
+![working with Aaron Ferries](./lab_14_acl.jpg)
