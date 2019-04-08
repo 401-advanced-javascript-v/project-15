@@ -7,7 +7,7 @@
 
 ### Links and Resources
 * [repo]()
-* [travis]()
+* [travis]([![Build Status](https://travis-ci.com/401-advanced-javascript-v/project-15.svg?branch=master)](https://travis-ci.com/401-advanced-javascript-v/project-15))
 * [heroku](https://git.heroku.com/intense-savannah-96971.git)
 
 #### Documentation
